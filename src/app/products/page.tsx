@@ -1,3 +1,4 @@
-export default function Products() {
-    return (<h1>Products List</h1>)
+import ProductsHome from "./ProductHomePage"
+export default function ProductsMain() {
+    return (<ProductsHome />)
 }
