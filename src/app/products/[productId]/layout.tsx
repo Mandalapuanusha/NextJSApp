@@ -1,4 +1,7 @@
 import React from "react";
+export const metadata ={
+    title: 'Product Detail Page'
+}
 export default function ProductDetailsLayout({
     children,
 }: {

@@ -2,6 +2,9 @@ import { notFound } from "next/navigation";
 import ErrorProduct from "../../ErrorProduct";
 import NotFound from "./not-found";
 
+export const metadata ={
+    title: "Review"
+}
 export default function ReviewDetail({ params }: { params: { productId: number, reviewId: number } }) {
     if (params.productId > 1000) {
         return (
