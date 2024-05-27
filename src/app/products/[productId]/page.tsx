@@ -8,9 +8,14 @@ type Props = {
     }
 };
 
-export const generateMetadata = ({params}: Props): Metadata => {
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+    const title = await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`iphone ${params.productId}`)
+        }, 100)
+    });
     return {
-        title: `Product ${params.productId}`,
+        title: `Product ${title}`,
     }
 }
 
@@ -20,8 +25,18 @@ export const generateMetadata = ({params}: Props): Metadata => {
 //         title: `Product ${params.productId}`,
 //     }
 // }
+// export const generateMetadata = async ({ params }) => {
+//     const title = await new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(`iphone ${params.productId}`)
+//         }, 100)
+//     });
+//     return {
+//         title: `Product ${title}`,
+//     }
+// }
 
-export default function ProductDetails({ params}:Props ) {
+export default function ProductDetails({ params }: Props) {
     if (params.productId <= 1000) {
         return (
             <h1>Product Details for product {params.productId}</h1>
