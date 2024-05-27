@@ -7,6 +7,7 @@ export default function Home() {
             <Link href="/blog"> Blog</Link>
             <Link href="/products"> Products</Link>
             <Link href="/docs"> Docs</Link>
+            <Link href="/register"> Register</Link>
         </>
 
     )
