@@ -1,7 +1,13 @@
 import ProductsHome from "./ProductHomePage"
-export const metadata ={
-    title: "Product List Page"
+import { Metadata } from "next"
+
+export const metadata:Metadata ={
+    // title: {
+    //     absolute:"Product List Page"
+    // }
+    title: "Products page"
 }
+
 export default function ProductsMain() {
     return (<ProductsHome />)
 }
