@@ -9,6 +9,5 @@ export default function Home() {
             <Link href="/docs"> Docs</Link>
             <Link href="/register"> Register</Link>
         </>
-
     )
 }
