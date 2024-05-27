@@ -9,7 +9,7 @@ export default function ProductDetailsLayout({
 }) {
     return (<>
         {children}
-        <h1 style={{ backgroundColor: "seagreen", padding: "1rem", }}>Featured Products</h1>
+        <h1 style={{ backgroundColor: "lavender", padding: "1rem", }}>Featured Products</h1>
     </>
     )
 }

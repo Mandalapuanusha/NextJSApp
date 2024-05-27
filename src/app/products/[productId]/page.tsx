@@ -18,7 +18,8 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
         title: `Product ${title}`,
     }
 }
-
+// <!---------IMPORTANT----->
+// You can not import both const metadata and generateMetadata from a same file.
 // Using Jsx, we can pass it as below.
 // export const generateMetadata = ({ params }) => {
 //     return {
