@@ -1,2 +1,0 @@
-# NextJSApp
-next-js-app
